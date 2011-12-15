@@ -1,0 +1,13 @@
+____________________________________README_____________________________________
+find_country_pointer_parameter.c finds a country based on a dialing code 
+entered by the user, then prints the name of the country. Country names and 
+their attendent dialing codes are stored in a dialing_code structure, and each
+of these is in turn stored in an array of dialing_code structures called 
+country_codes. The function read_code(), which is passed a pointer to a 
+dialing_code structure (equivalent to being passed an array of dialing_code
+structures) and an integer representing the number of dialing_code structures
+in country_codes, returns the index of the country_code structure with a 
+dialing code matching the one provided by the user. If no match is found, -2
+is returned and the user is prompted to reenter the code. In general, the user
+is prompted to reenter codes until he/she enters -1, at which point the main
+function returns.
